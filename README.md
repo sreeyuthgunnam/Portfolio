@@ -4,7 +4,7 @@ Personal portfolio website showcasing my work as a Software Developer and Comput
 
 ## Live Site
 
-[View Portfolio](https://sreeyuthgunnam.github.io/portfolio) *(update with your actual URL)*
+[View Portfolio](https://sreeyuthgunnam.github.io/Portfolio/)
 
 ## Tech Stack
 
