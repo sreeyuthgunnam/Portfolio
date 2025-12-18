@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, user-scalable=yes" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Sreeyuth Chowdary — Software Developer</title>
+  <meta name="description" content="Computer Science student at Northwest Missouri State University. Software Developer with experience in full-stack development, machine learning, and RESTful APIs." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Space+Grotesk:wght@400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#">
+        <img src="assets/N-Monogm-BW.png" alt="NWMSU" class="brand-logo-img">
+        <span class="brand-name">Sreeyuth Chowdary</span>
+      </a>
+      <nav class="main-nav" id="nav">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+        <a class="btn btn-primary" href="./resume/Resume.pdf" download id="resume-link">Resume</a>
+      </nav>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <h1>Hello — I'm <span class="name">Sreeyuth Chowdary</span></h1>
+          <p class="lead">I'm a <span id="role"></span></p>
+
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="./resume/Resume.pdf" download>Download Resume</a>
+            <a class="btn btn-ghost" href="#contact">Contact</a>
+          </div>
+        </div>
+
+        <div class="hero-art">
+          <div class="profile-wrapper">
+            <img src="assets/profile.jpg" alt="Sreeyuth Chowdary" class="profile-art">
+            <img src="assets/paw.png" alt="Bearcat" class="bearcat-paw-badge">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container">
+        <h2 class="section-title">About</h2>
+        <div class="about-content reveal">
+          <div class="card about-card">
+            <p>I'm a Computer Science student at <strong>Northwest Missouri State University</strong> (GPA 3.6/4.0), graduating in December 2026. Currently working as a <strong>Software Developer</strong> at the Learning and Teaching Center, building and maintaining full-stack applications.</p>
+            <p>I specialize in <strong>full-stack development</strong> with TypeScript, Python, and modern frameworks like Next.js, React, FastAPI, and Vue.js. My experience includes building RAG-powered AI applications, real-time computer vision systems, REST APIs with authentication, and optimizing database performance.</p>
+            <p>I'm passionate about creating impactful software solutions and seeking <strong>Summer 2026 internship opportunities</strong> where I can contribute to innovative projects and continue growing as a developer.</p>
+            
+            <div class="about-badges">
+              <div class="mini-badge">
+                <img src="assets/N-Monogm-BW.png" alt="ACM" class="mini-badge-icon">
+                <span>Association for Computing Machinery</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="conference-highlight reveal">
+          <div class="conference-content">
+            <img src="assets/CCSC.png" alt="CCSC" class="conference-logo">
+            <div>
+              <span class="conference-tag">Conference Presentation</span>
+              <p><a href="https://www.ccsc.org/centralplains/2025/talks/talk-poster03/" target="_blank" rel="noopener noreferrer"><strong>CCSC Central Plains 2025</strong></a> — Presented research poster on <em>Enhancing Adjunct Faculty Performance Prediction by Applying SMOTE Techniques</em> at Drake University, Des Moines, IA.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="experience">
+      <div class="container">
+        <h2 class="section-title">Work Experience</h2>
+        <div class="experience-timeline">
+          <article class="experience-card reveal">
+            <div class="experience-header">
+              <div class="experience-title-group">
+                <h3>Software Developer</h3>
+                <p class="experience-company">Learning and Teaching Center, Maryville, MO</p>
+              </div>
+              <span class="experience-date">Sep 2024 - Present</span>
+            </div>
+            <ul class="experience-list">
+              <li>Built and maintained an <strong>Adjunct Faculty Management System</strong> that delivers role-based dashboards for provosts, chairs, and coordinators using <strong>FastAPI, Vue.js, and MySQL</strong>.</li>
+              <li>Designed REST APIs with OpenAPI documentation and implemented <strong>JWT authentication, LDAP integration, and role-based access control</strong> across four permission levels.</li>
+              <li>Automated data ingestion and aggregation from <strong>Canvas LMS and EvaluationKit</strong> to replace manual reporting workflows for university leadership.</li>
+              <li>Improved performance by reducing evaluation processing time by <strong>40%</strong> and API latency by <strong>25%</strong> using async database operations, connection pooling, indexing, and query optimization with SQLAlchemy and aiomysql.</li>
+              <li>Increased production reliability by expanding <strong>unit test coverage</strong> and adding structured logging to speed debugging and prevent regressions.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="container">
+        <h2 class="section-title">Projects</h2>
+        <div class="projects-grid">
+          <article class="project-card reveal">
+            <div class="project-body">
+              <h3>Podcast Brain</h3>
+              <p class="project-description">Full-stack AI podcast platform with RAG question-answering. Transcribes audio and enables semantic search using transcript chunking, OpenAI embeddings, and PostgreSQL pgvector. Achieves ~120ms retrieval latency and ~1.8s streaming response.</p>
+              <div class="project-tech">
+                <span class="tech-tag">Next.js 14</span>
+                <span class="tech-tag">TypeScript</span>
+                <span class="tech-tag">Supabase</span>
+                <span class="tech-tag">OpenAI</span>
+                <span class="tech-tag">pgvector</span>
+              </div>
+              <div class="project-links">
+                <a href="https://podcast-brain.vercel.app" target="_blank" rel="noopener noreferrer" class="project-link-btn">Demo</a>
+                <a href="https://github.com/sreeyuthgunnam/Podcast-Brain" target="_blank" rel="noopener noreferrer" class="project-link-btn secondary">GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-body">
+              <h3>Gesture Code</h3>
+              <p class="project-description">Published VS Code extension enabling hands-free editor control through webcam gesture recognition. Uses MediaPipe Hands with 21 landmarks and handedness-aware detection. Built Node.js HTTP server to bypass VS Code CSP restrictions.</p>
+              <div class="project-tech">
+                <span class="tech-tag">TypeScript</span>
+                <span class="tech-tag">MediaPipe</span>
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">VS Code API</span>
+              </div>
+              <div class="project-links">
+                <a href="https://open-vsx.org/extension/sreeyuthgunnam/gesture-code" target="_blank" rel="noopener noreferrer" class="project-link-btn">Open VSX</a>
+                <a href="https://github.com/sreeyuthgunnam/gesture-code" target="_blank" rel="noopener noreferrer" class="project-link-btn secondary">GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-body">
+              <h3>Pose Fitness Coach</h3>
+              <p class="project-description">Real-time pose estimation fitness coach tracking 33 body landmarks and counting reps across 8 exercises using state machine logic. Includes OOP exercise tracker framework with 33 pytest test cases for validation.</p>
+              <div class="project-tech">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">MediaPipe</span>
+                <span class="tech-tag">OpenCV</span>
+                <span class="tech-tag">pytest</span>
+              </div>
+              <div class="project-links">
+                <a href="https://pose-fitness-coach.vercel.app" target="_blank" rel="noopener noreferrer" class="project-link-btn">Demo</a>
+                <a href="https://github.com/sreeyuthgunnam/pose-fitness-coach" target="_blank" rel="noopener noreferrer" class="project-link-btn secondary">GitHub</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="skills">
+      <div class="container">
+        <h2 class="section-title">Skills</h2>
+        
+        <div class="skills-category reveal">
+          <h3 class="skills-category-title">Languages</h3>
+          <div class="skills-list">
+            <span class="skill">TypeScript</span>
+            <span class="skill">Python</span>
+            <span class="skill">Java</span>
+            <span class="skill">JavaScript</span>
+            <span class="skill">SQL</span>
+          </div>
+        </div>
+
+        <div class="skills-category reveal">
+          <h3 class="skills-category-title">Frameworks & Libraries</h3>
+          <div class="skills-list">
+            <span class="skill">Next.js</span>
+            <span class="skill">React</span>
+            <span class="skill">FastAPI</span>
+            <span class="skill">Node.js</span>
+            <span class="skill">Vue.js</span>
+          </div>
+        </div>
+
+        <div class="skills-category reveal">
+          <h3 class="skills-category-title">Databases</h3>
+          <div class="skills-list">
+            <span class="skill">PostgreSQL</span>
+            <span class="skill">Supabase</span>
+            <span class="skill">MySQL</span>
+            <span class="skill">MongoDB</span>
+            <span class="skill">pgvector</span>
+          </div>
+        </div>
+
+        <div class="skills-category reveal">
+          <h3 class="skills-category-title">AI & Computer Vision</h3>
+          <div class="skills-list">
+            <span class="skill">OpenAI API</span>
+            <span class="skill">AssemblyAI</span>
+            <span class="skill">MediaPipe</span>
+            <span class="skill">OpenCV</span>
+          </div>
+        </div>
+
+        <div class="skills-category reveal">
+          <h3 class="skills-category-title">Tools</h3>
+          <div class="skills-list">
+            <span class="skill">Git</span>
+            <span class="skill">GitHub</span>
+            <span class="skill">GitLab</span>
+            <span class="skill">Docker</span>
+            <span class="skill">Vercel</span>
+            <span class="skill">VS Code</span>
+            <span class="skill">Postman</span>
+            <span class="skill">pytest</span>
+          </div>
+        </div>
+
+        <div class="skills-category reveal">
+          <h3 class="skills-category-title">Core Concepts</h3>
+          <div class="skills-list">
+            <span class="skill">Data Structures & Algorithms</span>
+            <span class="skill">OOP</span>
+            <span class="skill">OOD</span>
+            <span class="skill">RESTful APIs</span>
+            <span class="skill">JWT & RBAC</span>
+            <span class="skill">Unit Testing</span>
+            <span class="skill">Async Programming</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="container">
+        <h2 class="section-title">Let's Connect</h2>
+        <p class="contact-intro reveal">Actively seeking <strong>Summer 2026 internships</strong>. Reach out anytime!</p>
+        
+        <div class="contact-simple reveal">
+          <a href="mailto:sreeyuth.gunnam@gmail.com" class="contact-link-card">
+            <div class="contact-icon-wrap"><img src="assets/email icon.jpg" alt="Email" class="contact-logo"></div>
+            <span class="contact-text">sreeyuth.gunnam@gmail.com</span>
+          </a>
+          <a href="tel:+16605281103" class="contact-link-card">
+            <div class="contact-icon-wrap"><img src="assets/call.png" alt="Phone" class="contact-logo"></div>
+            <span class="contact-text">+1 (660) 528-1103</span>
+          </a>
+          <a href="https://linkedin.com/in/sreeyuth-gunnam" target="_blank" rel="noopener noreferrer" class="contact-link-card">
+            <div class="contact-icon-wrap"><img src="assets/linkedin logo.png" alt="LinkedIn" class="contact-logo"></div>
+            <span class="contact-text">linkedin.com/in/sreeyuth-gunnam</span>
+          </a>
+          <a href="https://github.com/sreeyuthgunnam" target="_blank" rel="noopener noreferrer" class="contact-link-card">
+            <div class="contact-icon-wrap"><img src="assets/github logo.png" alt="GitHub" class="contact-logo"></div>
+            <span class="contact-text">github.com/sreeyuthgunnam</span>
+          </a>
+        </div>
+        
+        <div class="contact-actions reveal">
+          <a class="btn btn-primary" href="mailto:sreeyuth.gunnam@gmail.com?subject=Summer%202026%20Internship%20Opportunity">Send Email</a>
+          <a class="btn btn-ghost" href="./resume/Resume.pdf" download>Download Resume</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Sreeyuth Chowdary — Computer Science Student</p>
+      <div class="social">
+        <a href="https://github.com/sreeyuthgunnam" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://linkedin.com/in/sreeyuth-gunnam" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
