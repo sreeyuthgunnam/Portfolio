@@ -4,7 +4,7 @@ Personal portfolio website showcasing my work as a Software Developer and Comput
 
 ## Live Site
 
-[View Portfolio](https://sreeyuthgunnam.github.io/Portfolio/)
+[View Portfolio](www.sreeyuth.com)
 
 ## Tech Stack
 
@@ -38,21 +38,6 @@ Portfolio/
 - Hide/show navbar on scroll
 - Frosted glass navbar effect
 - Bearcat green theme (#00a86b)
-
-## Deployment
-
-This is a static site. Deploy to:
-- GitHub Pages
-- Netlify
-- Vercel
-- Any static hosting
-
-## To Update Content
-
-1. **Resume** — Replace `resume/Resume.pdf`
-2. **Profile photo** — Replace `assets/profile.jpg`
-3. **Projects** — Edit the projects section in `index.html`
-4. **Contact** — Update email/phone in `index.html`
 
 ## License
 
