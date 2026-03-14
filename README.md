@@ -26,7 +26,7 @@ Portfolio/
 │   ├── N-Monogm-BW.png
 │   ├── CCSC.png
 │   └── [contact icons]
-└── resume/Resume.pdf   # Downloadable resume
+└── resume/Gunnam_Sreeyuth_Chowdary_Resume.pdf   # Downloadable resume
 ```
 
 ## Features

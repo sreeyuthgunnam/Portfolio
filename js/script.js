@@ -1,5 +1,5 @@
 // Small JS helpers: typewriter, reveal on scroll, mobile nav toggle, year
-const roles = ["Software Developer.", "Computer Science Student."]
+const roles = ["Software Developer.", "Computer Science Student.", "Learner."]
 let roleIdx = 0
 const roleEl = document.getElementById('role')
 const yearEl = document.getElementById('year')
@@ -90,7 +90,7 @@ window.addEventListener('scroll', () => {
 })
 
 // Progressive enhancement: if resume file not present, hide download button gracefully
-fetch('./resume/Resume.pdf', {method:'HEAD'}).then(res=>{
+fetch('./resume/Gunnam_Sreeyuth_Chowdary_Resume.pdf', {method:'HEAD'}).then(res=>{
   if(!res.ok && resumeLink) resumeLink.style.display = 'none'
 }).catch(()=>{
   // ignore network errors; leave button hidden if file absent
